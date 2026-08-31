@@ -15,6 +15,12 @@ jobs:
         with:
           dotnet-version: 8.0.x
 
+      - uses: actions/cache@v4
+        with:
+          path: ~/.nuget/packages
+          key: nuget-${{ hashFiles('Mini_Mall/Mini_Mall.csproj') }}
+          restore-keys: nuget-
+
       - name: Restore
         run: dotnet restore Mini_Mall/Mini_Mall.csproj
 
