@@ -33,7 +33,7 @@ jobs:
       - name: Publish
         run: dotnet publish Mini_Mall/Mini_Mall.csproj --no-build --configuration Release -o ./publish
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: minimall
           path: publish/
