@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Mini_Mall/Mini_Mall.csproj" />
+  <Project Path="Mini_Mall_Test/Mini_Mall_Test.csproj" Id="8af72166-1f49-4498-a409-d19125c5e0ee" />
+</Solution>
