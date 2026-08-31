@@ -8,7 +8,7 @@ namespace Mini_Mall.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    //[Authorize(Roles = "Customer")]
+    [Authorize(Roles = "Customer")]
     public class CustomerController : ControllerBase
     {
         private readonly ICustomerService service;
